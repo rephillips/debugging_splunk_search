@@ -1,6 +1,8 @@
 # debugging_splunk_search
 This process outlines the steps to collect eu-stacks on a splunk search process pid (as opposed to collecting eu-stacks on main splunkd pid):
 
+Typically this level of debugging is performed to debug a slow search. 
+
 install the collect-pstack.tar.gz on the SH the search will be run from as well as the slowest indexer. You can check how long each indexer took on the search by looking in the Job Inspector after the search finishes:>Job > Inspect Job
 
 Execution costs:
