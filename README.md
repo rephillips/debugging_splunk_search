@@ -25,7 +25,7 @@ yum install elfutils
 
 
 •	Download the package from here:
-
+https://github.com/rephillips/debugging_splunk_search/blob/main/collect-pstack.tar.gz
 
 •	Put it under $SPLUNK_HOME/bin/, untar it there, there should be collect.sh scripts:
 
@@ -41,7 +41,8 @@ debug_metrics = true
 #no splunk restart required 
 
 
-[bin]$ ./collect.sh Setup Splunk Env Tab-completion of "splunk <verb> <object>" is available. Start pstack on splunkd ...
+[bin]$ ./collect.sh 
+Setup Splunk Env Tab-completion of "splunk <verb> <object>" is available. Start pstack on splunkd ...
 •	Run the test search with debug and "PSTACKME": 
 
   ie: test search or your slow search (try to keep search as simple as possible):
