@@ -51,6 +51,7 @@ index=_internal sourcetype=splunkd earliest=11/05/2021:18:00:00 latest=11/05/202
 - check the job inspector to get the sid of the search
 - the stacks will be inside the search artifact directory of the sid of the search in : 
 SH: $SPLUNK_HOME/var/run/splunk/dispatch/<sid>
+
 Indexer: $SPLUNK_HOME/var/run/splunk/dispatch/remote_<SH>_<sid>
 
  !NOTE!: by default an ad-hoc search artifact will be deleted after 10m. You will want to move the artifact directory off to /tmp to preserve it.
