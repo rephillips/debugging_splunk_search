@@ -14,8 +14,6 @@ Duration bar image 	0.10 	dispatch.stream.remote.rplinux-IDX3 	2 	- 	456,765
 
 In the above output of a job inspector we can see that there were three indexers which returned results where rplinux-IDX2 took the longest (.30 sec) and sent 465,685 bytes to the search head.
 
-
-
 •	Install eu-stack:
 
 sudo apt install elfutils
