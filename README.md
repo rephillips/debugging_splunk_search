@@ -35,6 +35,7 @@ turn on debug_metrics on the SH and the slowest indexer you will collect from
 
 /opt/splunk/etc/system/local/limits.conf
 [search_metrics]
+
 debug_metrics = true
 #no splunk restart required 
 
