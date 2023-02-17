@@ -69,7 +69,8 @@ SH: $SPLUNK_HOME/var/run/splunk/dispatch/<sid>
 
 Indexer: $SPLUNK_HOME/var/run/splunk/dispatch/remote_<SH>_<sid>
 
- !NOTE!: by default an ad-hoc search artifact will be deleted after 10m. You will want to move the artifact directory off to /tmp to preserve it.
+ !NOTE!: by default an ad-hoc search artifact will be deleted after 10m. You will want to move the artifact directory off to /tmp to preserve it. Or you can go into the search artifact directory and type "touch save" to preserve the search artifact.
+  
 
 •	Collect and send to Splunk Support:
 SH:
