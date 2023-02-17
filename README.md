@@ -24,6 +24,9 @@ sudo apt install elfutils
 or 
 yum install elfutils
 
+#####
+elfutils is a collection of utilities and libraries to read, create and modify ELF binary files, find and handle DWARF debug data, symbols, thread state and stacktraces for processes and core files on GNU/Linux. The current elfutils source code can be checked out with: git clone git://sourceware.org/git/elfutils.git.
+####
 
 •	Download the package from here:
 https://github.com/rephillips/debugging_splunk_search/blob/main/collect-pstack.tar.gz
