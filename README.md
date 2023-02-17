@@ -33,9 +33,15 @@ https://github.com/rephillips/debugging_splunk_search/blob/main/collect-pstack.t
 
 •	Put it under $SPLUNK_HOME/bin/, untar it there, there should be collect.sh scripts:
 
-[bin]$ ls collect* collect-command.sh collect-data-all.py collect-pstack.tar.gz collect.sh collect-stacks.sh
-•	Start the script by simply "./collect.sh" and keep it running:
+tar -xf collect-pstack.tar.gz
 
+[bin]$ ls collect* 
+collect-command.sh 
+collect-data-all.py 
+collect-pstack.tar.gz 
+collect.sh collect-stacks.sh
+
+•	Start the script by simply "./collect.sh" and keep it running:
 
 turn on debug_metrics on the SH and the slowest indexer you will collect from 
 
