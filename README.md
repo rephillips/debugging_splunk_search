@@ -46,14 +46,17 @@ collect.sh collect-stacks.sh
 turn on debug_metrics on the SH and the slowest indexer you will collect from 
 
 /opt/splunk/etc/system/local/limits.conf
+
 [search_metrics]
 
 debug_metrics = true
+
 #no splunk restart required 
 
 
 [bin]$ ./collect.sh 
 Setup Splunk Env Tab-completion of "splunk <verb> <object>" is available. Start pstack on splunkd ...
+
 •	Run the test search with debug and "PSTACKME": 
 
   ie: test search or your slow search (try to keep search as simple as possible):
