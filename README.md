@@ -54,7 +54,8 @@ debug_metrics = true
 #no splunk restart required 
 
 
-[bin]$ ./collect.sh 
+[bin]$ ./collect.sh
+
 Setup Splunk Env Tab-completion of "splunk <verb> <object>" is available. Start pstack on splunkd ...
 
 •	Run the test search with debug and "PSTACKME": 
