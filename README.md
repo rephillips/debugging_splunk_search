@@ -73,35 +73,52 @@ Indexer: $SPLUNK_HOME/var/run/splunk/dispatch/remote_<SH>_<sid>
   
 
 •	Collect and send to Splunk Support:
+  
 SH:
+  
 a.)job inspector export (pdf)
+  
 b.) search artifact of desired sid (confirm stacks are within )
+  
 c.) diag
+  
 
 Indexer(s):
+  
 a.) search artifact of desired sid (confirm stacks are within )
+  
 b.) diag
+  
 
 to collect a diag: 
-$SPLUNK_HOME/bin
-  ./splunk diag
   
+$SPLUNK_HOME/bin
+  
+  ./splunk diag
   
   turn off debug_metrics:
   
+  
   /opt/splunk/etc/system/local/limits.conf
+  
 [search_metrics]
+  
 debug_metrics = false
+  
 #no splunk restart required 
 
-a note on the log_debug: 
-| noop log_appender="searchprocessAppender;maxFileSize=50000000;maxBackupIndex=99" log_debug=* set_ttl=30m
+
+a note on the log_debug:
   
+| noop log_appender="searchprocessAppender;maxFileSize=50000000;maxBackupIndex=99" log_debug=* set_ttl=30m
+
+ 
 
 This command will add debug to a single search process and increase the search artifact's search.log file size from default of 25MB per file to 50MB per file and number of search.log.x files from default of 3 to 99. and set all channels to DEBUG which will increase logging verbosity for that search as well as extend the ttl of the artifact from default 10m of an ad-hoc search to 30m.
 both SH and indexers will get the change.
   
   Add debugging to a search process:
+  
 https://docs.splunk.com/Documentation/Splunk/8.2.1/SearchReference/noop
 
 For generating searches:
